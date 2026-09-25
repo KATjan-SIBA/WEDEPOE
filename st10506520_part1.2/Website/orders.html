@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders | Mutumane Kota 'N' Grilled Chicken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGO & NAVIGATION BAR -->
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="/Research/Images/LOGO.jpg" alt="Mutumane Logo" width="40" height="40" align="left">
+        <strong>MUTUMANE KOTA 'N' GRILLED CHICKEN</strong>
+      </a>
+      <nav align="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="orders.html" style="background-color: var(--fiery-orange); color: var(--white);">Orders</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br style="clear: both;">
+  <hr>
+
+  <!-- PAGE HEADING -->
+  <div align="center">
+    <h2>ONLINE DELIVERY ORDER</h2>
+    <p>Fill out the form below to place your order for fast local delivery.</p>
+  </div>
+
+  <!-- ORDER FORM CONTAINER -->
+  <div style="max-width: 700px; margin: 30px auto; background-color: var(--charcoal); padding: 30px; border-radius: 8px; border: 1px solid #333;">
+    <fieldset style="border: 2px solid var(--fiery-orange); border-radius: 6px; padding: 20px;">
+      <legend style="color: var(--warm-yellow); padding: 0 10px; font-weight: bold;">CUSTOMER DETAILS AND MEALS SELECTION</legend>
+      <form action="#" method="post">
+        
+        <p>
+          <label for="fullName"><strong>Full Name & Phone Number:</strong></label><br>
+          <input type="text" id="fullName" name="fullName" placeholder="Thabo - 082 123 4567" required>
+        </p>
+
+        <p>
+          <label for="address"><strong>Delivery Address / Notes:</strong></label><br>
+          <textarea id="address" name="address" rows="3" placeholder="House number, street name, landmark" style="width: 100%; padding: 12px; background-color: var(--charcoal-light); color: var(--white); border: 1px solid #444; border-radius: 4px;"></textarea>
+        </p>
+
+        <p>
+          <label for="meal"><strong>Select Meal:</strong></label><br>
+          <select id="meal" name="meal">
+            <option value="full-house">Full House Kota (R45.00)</option>
+            <option value="standard-kota">Standard Kota (R25.00)</option>
+            <option value="wings-pap">5X Wings + Chakalaka + Pap (R65.00)</option>
+            <option value="quarter-salsa">Quarter Chicken + Chakalaka + Pap (R45.00)</option>
+            <option value="russian-box">3X Russian + Salad + Chips (R95.00)</option>
+          </select>
+        </p>
+
+        <p>
+          <strong style="color: var(--warm-yellow);">Extra Toppings:</strong><br><br>
+          <input type="checkbox" id="cheese" name="topping" value="cheese" style="margin-right: 8px;">
+          <label for="cheese" style="color: var(--text-main);">Extra Cheese (+R5)</label><br><br>
+          
+          <input type="checkbox" id="russian" name="topping" value="russian" style="margin-right: 8px;">
+          <label for="russian" style="color: var(--text-main);">Extra Russian (+R12)</label>
+        </p>
+
+        <p>
+          <p>
+          <strong style="color: var(--warm-yellow);">Sauce Selection:</strong>
+          
+          <div class="options-group">
+            <div class="option-item">
+              <input type="radio" id="peri" name="sauce" value="peri-peri">
+              <label for="peri">Peri-Peri</label>
+            </div>
+            
+            <div class="option-item">
+              <input type="radio" id="bbq" name="sauce" value="bbq">
+              <label for="bbq">BBQ</label>
+            </div>
+            
+            <div class="option-item">
+              <input type="radio" id="tomato" name="sauce" value="tomato">
+              <label for="tomato">Tomato Sauce</label>
+            </div>
+            
+            <div class="option-item">
+              <input type="radio" id="special" name="sauce" value="special-sauce">
+              <label for="special">Special Sauce</label>
+            </div>
+            
+            <div class="option-item">
+              <input type="radio" id="white" name="sauce" value="white">
+              <label for="white">White Sauce</label>
+            </div>
+            
+            <div class="option-item">
+              <input type="radio" id="mustard" name="sauce" value="mustard">
+              <label for="mustard">Mustard</label>
+            </div>
+          </div>
+        </p>
+
+        <div align="center" style="margin-top: 25px;">
+          <input type="submit" value="Place Order" class="btn-primary" style="width: 100%; padding: 14px; font-size: 1.1rem; cursor: pointer;">
+        </div>
+
+      </form>
+    </fieldset>
+  </div>
+
+  <br style="clear: both;">
+  <hr>
+
+  <!-- FOOTER -->
+  <footer align="center">
+    <p>&copy; 2026 Mutumane Kota 'N' Grilled Chicken. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

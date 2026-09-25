@@ -1,0 +1,432 @@
+/* ==========================================
+   MUTUMANE KOTA 'N' GRILLED CHICKEN - GLOBAL STYLES
+   Color Scheme: 
+   - Warm Charcoal Gray: #1E1E1E
+   - Fiery Orange: #E65100
+   - Warm Yellow: #FFB300
+   ================================---------- */
+
+:root {
+  --charcoal: #1E1E1E;
+  --charcoal-light: #2A2A2A;
+  --fiery-orange: #E65100;
+  --fiery-orange-hover: #C44300;
+  --warm-yellow: #FFB300;
+  --warm-yellow-hover: #E09E00;
+  --bg-color: #121212;
+  --text-main: #E0E0E0;
+  --text-muted: #AAAAAA;
+  --white: #FFFFFF;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--warm-yellow);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--fiery-orange);
+  text-decoration: underline;
+}
+
+/* Header & Navigation Bar */
+header {
+  background-color: var(--charcoal);
+  border-bottom: 3px solid var(--fiery-orange);
+  padding: 15px 30px;
+}
+
+header div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  border-radius: 50%;
+  border: 2px solid var(--warm-yellow);
+  object-fit: cover;
+}
+
+header strong {
+  color: var(--warm-yellow);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: var(--fiery-orange);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--warm-yellow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 15px 0 10px 0;
+  color: var(--warm-yellow);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+h2 {
+  text-align: center;
+  color: var(--warm-yellow);
+  margin-top: 30px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 12px 0 8px 0;
+  min-height: 2.4em; /* Keeps card titles aligned even if 1 or 2 lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Structural Elements */
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--fiery-orange), transparent);
+  margin: 25px 0;
+}
+
+/* Paragraphs & Text Elements */
+p {
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+strong {
+  color: var(--warm-yellow);
+}
+
+/* Hero Section Polish */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, var(--charcoal), var(--bg-color));
+}
+
+.hero-logo {
+  border-radius: 50%;
+  border: 3px solid var(--warm-yellow);
+  box-shadow: 0 0 15px rgba(230, 81, 0, 0.4);
+}
+
+/* Menu Category & Feature Cards Layout */
+.category-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 20px 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 300px; /* Allows cards to grow and shrink evenly with a base width */
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--charcoal);
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card ol, 
+.card ul {
+  flex-grow: 1;
+  text-align: left; /* Keeps your menu lists neatly aligned to the left inside the centered card */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--fiery-orange);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--warm-yellow);
+  object-fit: cover;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Call to Action Buttons */
+.btn-primary {
+  background-color: var(--fiery-orange);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--fiery-orange-hover);
+  color: var(--white);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Form Elements (Contact / Enquiry / Orders) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--charcoal-light);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--warm-yellow);
+  box-shadow: 0 0 5px rgba(255, 179, 0, 0.4);
+}
+
+/* Tables */
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--charcoal);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: var(--fiery-orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+tr:hover {
+  background-color: var(--charcoal-light);
+}
+
+/* Footer */
+footer {
+  background-color: var(--charcoal);
+  color: var(--text-muted);
+  padding: 20px;
+  border-top: 3px solid var(--warm-yellow);
+  margin-top: 40px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Responsive Adjustments for Mobile Screens */
+@media screen and (max-width: 768px) {
+  header div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  nav ul {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Make category cards stack full width on mobile */
+  .card {
+    width: 90% !important;
+    display: block !important;
+    margin: 15px auto !important;
+
+  }
+
+  /* --- CARD & IMAGE ZOOM EFFECT --- */
+
+/* 1. Ensure the card hides anything that zooms outside its borders */
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* 2. Style the image transition */
+.card img {
+  transition: transform 0.4s ease-in-out;
+  display: block; /* Removes unwanted bottom spacing under inline images */
+}
+
+/* 3. Trigger the zoom when hovering over the card */
+.card:hover img {
+  transform: scale(1.25);
+}
+.about-container {
+  max-width: 900px; 
+  margin: 0 auto; 
+  background-color: var(--charcoal); 
+  padding: 40px; 
+  border-radius: 8px; 
+  border: 1px solid #333;
+}
+
+.about-image {
+  display: inline-block; 
+  width: 35%; 
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.about-text {
+  display: inline-block; 
+  width: 60%; 
+  vertical-align: middle; 
+  padding-left: 20px; 
+  box-sizing: border-box;
+}
+
+/* Responsive layout for Mobile & Tablet */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+  
+  .about-image, 
+  .about-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+
+/* --- RESPONSIVE SAUCE & TOPPING OPTIONS --- */
+.options-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile/tablet */
+  gap: 12px 15px;
+  margin-top: 10px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--charcoal-light);
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.option-item input[type="radio"],
+.option-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: var(--fiery-orange);
+  transform: scale(1.1); /* Slightly larger for easier mobile tapping */
+}
+
+.option-item label {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Full width option on smaller screens if needed */
+@media screen and (max-width: 480px) {
+  .options-group {
+    grid-template-columns: 1fr; /* Stacks into 1 single column on very small phones */
+  }
+}
+
+}
+
